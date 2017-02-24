@@ -16,6 +16,31 @@ p, th, td {
     font-size: 140%;
 }
 
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #b3b3b3;
+}
+
+ul.topnav li {
+    float: left;
+    }
+
+ul.topnav li a {
+    display: inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: 0.3s;
+    font-size: 20px;
+}
+
+ul.topnav li a:hover {
+    background-color: #555;}
+
 greenish color: #b6e2cd
 greyish color: #cad4d4
 bluish color: #9ac2f0
