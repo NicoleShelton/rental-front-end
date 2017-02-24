@@ -1,5 +1,5 @@
 img {
-    float: left;
+    
     width: 30%; 
     margin-right: 1%; 
     margin-bottom: 0.5em;
@@ -41,23 +41,11 @@ ul.topnav li a {
 }
 
 ul.topnav li a:hover {
-    background-color: #555;}
+    background-color: #555;
+    }
 
-#pageant {
-    position: relative;
-    z-index: 1;
-}
-
-#prom {
-    position: relative;
-    z-index: 1;
-    bottom: 350px;
-}
-
-#wedding {
-    position: relative;
-    z-index: 1;
-    bottom: 350px;
+figcaption {
+    margin-top: 100px;
 }
 
 greenish color: #b6e2cd
