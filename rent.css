@@ -7,6 +7,10 @@ h1 {
     color: #9ac2f0;
 }
 
+p {
+    color: #93cdae;
+}
+
 p, th, td {
     font-size: 140%;
 }
