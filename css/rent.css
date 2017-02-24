@@ -1,6 +1,8 @@
 img {
-    height: 350px;
-    width: 250px;
+    float: left;
+    width: 30%; 
+    margin-right: 1%; 
+    margin-bottom: 0.5em;
 }
 
 h1, p {
@@ -40,6 +42,23 @@ ul.topnav li a {
 
 ul.topnav li a:hover {
     background-color: #555;}
+
+#pageant {
+    position: relative;
+    z-index: 1;
+}
+
+#prom {
+    position: relative;
+    z-index: 1;
+    bottom: 350px;
+}
+
+#wedding {
+    position: relative;
+    z-index: 1;
+    bottom: 350px;
+}
 
 greenish color: #b6e2cd
 greyish color: #cad4d4
