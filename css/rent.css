@@ -2,3 +2,20 @@ img {
     height: 350px;
     width: 250px;
 }
+
+h1, p {
+    text-align: center;
+}
+
+h1 {
+    font-size: 350%;
+    color: #9ac2f0;
+}
+
+p, th, td {
+    font-size: 140%;
+}
+
+greenish color: #b6e2cd
+greyish color: #cad4d4
+bluish color: #9ac2f0
