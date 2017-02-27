@@ -8,6 +8,10 @@ h1 {
     color: #9ac2f0;
 }
 
+body {
+    background-color: #f0f5f5;
+}
+
 p {
     color: #93cdae;
     font-family: 'Shadows Into Light', cursive;
