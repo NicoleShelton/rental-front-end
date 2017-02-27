@@ -10,11 +10,13 @@ h1 {
 
 p {
     color: #93cdae;
-}
-
-p, th, td {
     font-family: 'Shadows Into Light', cursive;
     font-size: 140%;
+}
+
+td, a {
+    color: black;
+    font-size: 130%;
 }
 
 ul.topnav {
