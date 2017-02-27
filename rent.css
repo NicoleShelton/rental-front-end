@@ -3,6 +3,7 @@ h1, p {
 }
 
 h1 {
+    font-family: 'Dancing Script', cursive;
     font-size: 350%;
     color: #9ac2f0;
 }
@@ -12,6 +13,7 @@ p {
 }
 
 p, th, td {
+    font-family: 'Shadows Into Light', cursive;
     font-size: 140%;
 }
 
@@ -28,6 +30,7 @@ ul.topnav li {
     }
 
 ul.topnav li a {
+    font-family: 'Shadows Into Light', cursive;
     display: inline-block;
     color: black;
     text-align: center;
