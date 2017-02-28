@@ -1,9 +1,9 @@
 function responsive() {
-	var x = document.getElementById("myTopnav");
-	if (x.className === "topnav") {
-		x.className += " responsive";
+	var response = document.getElementById("myTopnav");
+	if (response.className === "topnav") {
+		response.className += " responsive";
 	} else {
-		x.className = "topnav";
+		response.className = "topnav";
 	}
 }
 
