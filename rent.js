@@ -10,31 +10,32 @@ function responsive() {
 var purchaseItem = {
 	"total": 0,
 	"lastTransactionAmount": 0,
-	"numItems": 0,
 	//adding items
 	"add": function (itemCost) {
 		this.total += itemCost;
 		this.lastTransactionAmount = itemCost;
 	},
 	//scanning items
-	"scan": function (item, quantity) {
+		"scan": function (item) {
+			var id = '#' + item;
+			var quantity = $(id).val();
 		switch (item) {
-			case "Casual Dress":
+			case "Casual":
 				this.add(120 / 10 * 1.07 * quantity);
 				break;
 			case "Cocktail":
 				this.add(100 / 10 * 1.07 * quantity);
 				break;
-			case "Evening Dress":
+			case "Evening":
 				this.add(175 / 10 * 1.07 * quantity);
 				break;
-			case "Pageant Dress":
+			case "Pageant":
 				this.add(150 / 10 * 1.07 * quantity);
 				break;
-			case "Prom Dress":
+			case "Prom":
 				this.add(200 / 10 * 1.07 * quantity);
 				break;
-			case "Wedding Dress":
+			case "Wedding":
 				this.add(300 / 10 * 1.07 * quantity);
 				break;
 		}

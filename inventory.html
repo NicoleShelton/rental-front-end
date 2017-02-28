@@ -8,8 +8,9 @@
     <link href="rent.css" rel="stylesheet" type="text/css">
     <link href="imgs/dress_icon.png" rel="shortcut icon" />
 </head>
-
 <body>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="jquery.tools.min.js"></script>
 	<ul class="topnav" id="myTopnav">
         <li><a>Rent the Dress</a></li>
 		<li>
@@ -30,8 +31,8 @@
             <img src='imgs/casual.jpg'>
             <p id="dress">Casual Dress</p>
             <p id="description">Simple and beautiful for everyday wear.</p>
-            <center><input id="input" type="number" id='Casual' placeholder="Quan" min="0" max="10">
-            <button id="button" type="button" onclick="purchaseItem.scan(document.getElementById('Casual').value)">Add</button></center>
+            <center><input type="number" id="Casual" placeholder="Quan" min="0" max="10">
+            <button id="button" type="button" onclick="purchaseItem.scan('Casual')">Add</button></center>
             <p id="price">$120</p>
         </div>
 
@@ -39,8 +40,8 @@
             <img src="imgs/cocktail.jpg">
             <p id="dress">Cocktail dress</p>
             <p id="description">Classy dress for late nights with work friends.</p>
-            <center><input id="input" type="number" id='Cocktail' placeholder="Quan" min="0" max="10">
-            <button id="button" type="button" onclick="purchaseItem.scan(document.getElementById('Cocktail').value)">Add</button></center>
+            <center><input type="number" id='Cocktail' placeholder="Quan" min="0" max="10">
+            <button id="button" type="button" onclick="purchaseItem.scan('Cocktail')">Add</button></center>
             <p id="price">$100</p>
         </div>
 
@@ -48,8 +49,8 @@
             <img src="imgs/evening.jpg">
             <p id="dress">Evening dress</p>
             <p id="description">Elegant dress for any formal event.</p>
-            <center><input id="input" type="number" id='Evening' placeholder="Quan" min="0" max="10">
-            <button id="button" type="button" onclick="purchaseItem.scan(document.getElementById('Evening').value)">Add</button></center>
+            <center><input type="number" id='Evening' placeholder="Quan" min="0" max="10">
+            <button id="button" type="button" onclick="purchaseItem.scan('Evening')">Add</button></center>
             <p id="price">$175</p>
         </div>
 
@@ -57,8 +58,8 @@
             <img id="pageant" src="imgs/pageant.jpg">
             <p id="dress">Pageant dress</p>
             <p id="description">Stunning sequin pageant dress.</p>
-            <center><input id="input" type="number" id='Pageant' placeholder="Quan" min="0" max="10">
-            <button id="button" type="button" onclick="purchaseItem.scan(document.getElementById('Pageant').value)">Add</button></center>
+            <center><input type="number" id='Pageant' placeholder="Quan" min="0" max="10">
+            <button id="button" type="button" onclick="purchaseItem.scan('Pageant')">Add</button></center>
             <p id="price">$150</p>
         </div>
 
@@ -66,8 +67,8 @@
             <img id="prom" src="imgs/prom.jpg">
             <p id="dress">Prom dress</p>
             <p id="description">Gorgeous 2-piece prom dress</p>
-            <center><input id="input" type="number" id='Prom' placeholder="Quan" min="0" max="10">
-            <button id="button" type="button" onclick="purchaseItem.scan(document.getElementById('Prom').value)">Add</button></center>
+            <center><input type="number" id='Prom' placeholder="Quan" min="0" max="10">
+            <button id="button" type="button" onclick="purchaseItem.scan('Prom')">Add</button></center>
             <p id="price">$200</p>
         </div>
 
@@ -75,13 +76,11 @@
             <img id="wedding" src="imgs/wedding.jpg">
             <p id="dress">Wedding dress</p>
             <p id="description">Simple elegant wedding dress.</p>
-            <center><input id="input" type="number" id='Wedding' placeholder="Quan" min="0" max="10">
-            <button id="button" type="button" onclick="purchaseItem.scan(document.getElementById('Wedding').value)">Add</button></center>
+            <center><input type="number" id='Wedding' placeholder="Quan" min="0" max="10">
+            <button id="button" type="button" onclick="purchaseItem.scan('Wedding')">Add</button></center>
             <p id="price">$300</p>
         </div>
     </div>
-    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
-    <script src="jquery.tools.min.js"></script>
     <script src="rent.js"></script>
 </body>
 
