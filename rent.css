@@ -114,17 +114,20 @@ img {
 }
 
 #btn {
-    border-radius: 50%;
-    height: 50px;
+    border-radius: 12px;
+    height: 40px;
     width: 100px;
+    border-color: #9ac2f0;
     }
 
 #button {
-    height: 25px;
-    width: 50px;
+    border-radius: 12px;
+    border-color: #9ac2f0;
 }
 
-#input {
+#Casual, #Cocktail, #Evening, #Pageant, #Prom, #Wedding {
     height: 25px;
     width: 50px;
+    border-radius: 12px;
+    border-color: #9ac2f0;
 }
