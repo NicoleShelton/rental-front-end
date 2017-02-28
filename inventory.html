@@ -25,8 +25,8 @@
             <img src='imgs/casual.jpg'>
             <p id="dress">Casual Dress</p>
             <p id="description">Simple and beautiful for everyday wear.</p>
-            <center><input type="number" id="a" placeholder="Input qunatity" min="0" max="10">
-            <button type="button" onclick="purchaseItem.scan(document.getElementById('a').value)">Add</button></center>
+            <center><input id="input" type="number" id="a" placeholder="Quan" min="0" max="10">
+            <button id="button" type="button" onclick="purchaseItem.scan(casual, document.getElementById('a').value)">Add</button></center>
             <p id="price">$120</p>
         </div>
 
@@ -34,8 +34,8 @@
             <img src="imgs/cocktail.jpg">
             <p id="dress">Cocktail dress</p>
             <p id="description">Classy dress for late nights with work friends.</p>
-            <center><input type="number" id="b" placeholder="Input qunatity" min="0" max="10">
-            <button type="button" onclick="purchaseItem.scan(document.getElementById('b').value)">Add</button></center>
+            <center><input id="input" type="number" id="b" placeholder="Quan" min="0" max="10">
+            <button id="button" type="button" onclick="purchaseItem.scan(cocktail, document.getElementById('b').value)">Add</button></center>
             <p id="price">$100</p>
         </div>
 
@@ -43,8 +43,8 @@
             <img src="imgs/evening.jpg">
             <p id="dress">Evening dress</p>
             <p id="description">Elegant dress for any formal event.</p>
-            <center><input type="number" id="c" placeholder="Input qunatity" min="0" max="10">
-            <button type="button" onclick="purchaseItem.scan(document.getElementById('c').value)">Add</button></center>
+            <center><input id="input" type="number" id="c" placeholder="Quan" min="0" max="10">
+            <button id="button" type="button" onclick="purchaseItem.scan(evening, document.getElementById('c').value)">Add</button></center>
             <p id="price">$175</p>
         </div>
 
@@ -52,8 +52,8 @@
             <img id="pageant" src="imgs/pageant.jpg">
             <p id="dress">Pageant dress</p>
             <p id="description">Stunning sequin pageant dress.</p>
-            <center><input type="number" id="d" placeholder="Input qunatity" min="0" max="10">
-            <button type="button" onclick="purchaseItem.scan(document.getElementById('d').value)">Add</button></center>
+            <center><input id="input" type="number" id="d" placeholder="Quan" min="0" max="10">
+            <button id="button" type="button" onclick="purchaseItem.scan(pageant, document.getElementById('d').value)">Add</button></center>
             <p id="price">$150</p>
         </div>
 
@@ -61,8 +61,8 @@
             <img id="prom" src="imgs/prom.jpg">
             <p id="dress">Prom dress</p>
             <p id="description">Gorgeous 2-piece prom dress</p>
-            <center><input type="number" id="e" placeholder="Input qunatity" min="0" max="10">
-            <button class="" onclick="purchaseItem.scan(document.getElementById('e').value)">Add</button></center>
+            <center><input id="input" type="number" id="e" placeholder="Quan" min="0" max="10">
+            <button id="button" type="button" onclick="purchaseItem.scan(prom, document.getElementById('e').value)">Add</button></center>
             <p id="price">$200</p>
         </div>
 
@@ -70,12 +70,12 @@
             <img id="wedding" src="imgs/wedding.jpg">
             <p id="dress">Wedding dress</p>
             <p id="description">Simple elegant wedding dress.</p>
-            <center><input type="number" id="f" placeholder="Input qunatity" min="0" max="10">
-            <button type="button" onclick="purchaseItem.scan(document.getElementById('f').value)">Add</button></center>
+            <center><input id="input" type="number" id="f" placeholder="Quan" min="0" max="10">
+            <button id="button" type="button" onclick="purchaseItem.scan(wedding, document.getElementById('f').value)">Add</button></center>
             <p id="price">$300</p>
         </div>
         <div>
-            <center><button type="button" onclick="showTotal()">Show Total</button> <b><p id="total"></p></b></center>
+            <center><button id="btn" type="button" onclick="showTotal()">Show Total</button> <b><p id="total"></p></b></center>
          </div>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
