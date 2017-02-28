@@ -1,12 +1,13 @@
 <html>
-    <head>
-        <title>Rent the Dress</title>
-        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
-        <link href="rent.css" rel="stylesheet" type="text/css">
-        <link href="imgs/dress_icon.png" rel="shortcut icon" />
-    </head>
+
+<head>
+    <title>Rent the Dress</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Shadows+Into+Light" rel="stylesheet">
+    <link href="rent.css" rel="stylesheet" type="text/css">
+    <link href="imgs/dress_icon.png" rel="shortcut icon" />
+</head>
 
 <body>
 
@@ -16,12 +17,85 @@
         <li><a href="about.html">About</a></li>
         <li><a href="purchase.html">Purchase</a></li>
         <li class="icon">
-        <a href="javascript:void(0);" onclick="responsive()">&#9776;</a></li>
+            <a href="javascript:void(0);" onclick="responsive()">&#9776;</a></li>
     </ul>
-    
+
     <h1>Shopping Cart</h1>
 
-    <script src="/Users/nicole_s/rental_agency/Web_dev/rent.js"></script>
+    <ol>
+        <tr>
+            <td>
+                <li><b>Casual Dress</b>
+                    </p>
+                    <h4>Price: $120.00</h4>
+                    <input type="number" id="a" placeholder="Input qunatity" min="0" max="10">
+                    <button type="button" onclick="purchaseItem.scan(document.getElementById('a').value)">Add</button>
+                </li>
+            </td>
+        </tr>
+        <tr>
+            <td>
+
+                <li><b>Cocktail Dress</b>
+                    </p>
+                    <h4>Price: $100.00</h4>
+                    <input type="number" id="b" placeholder="Input qunatity" min="0" max="10">
+                    <button type="button" onclick="purchaseItem.scan(document.getElementById('b').value)">Add</button>
+                </li>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <li><b>Evening Dress</b>
+                    </p>
+                    <h4>Price: $175.00</h4>
+                    <input type="number" id="c" placeholder="Input qunatity" min="0" max="10">
+                    <button type="button" onclick="purchaseItem.scan(document.getElementById('c').value)">Add</button>
+                </li>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <li><b>Pageant Dress</b>
+                    </p>
+                    <h4>Price: $150.00</h4>
+                    <input type="number" id="d" placeholder="Input qunatity" min="0" max="10">
+                    <button type="button" onclick="purchaseItem.scan(document.getElementById('d').value)">Add</button>
+                </li>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <li><b>Prom Dress</b>
+                    </p>
+                    <h4>Price: $200.00</h4>
+                    <input type="number" id="e" placeholder="Input qunatity" min="0" max="10">
+                    <button type="button" onclick="purchaseItem.scan(document.getElementById('e').value)">Add</button>
+                </li>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <li><b>Wedding Dress</b>
+                    </p>
+                    <h4>Price: $300.00</h4>
+                    <input type="number" id="f" placeholder="Input qunatity" min="0" max="10">
+                    <button type="button" onclick="purchaseItem.scan(document.getElementById('f').value)">Add</button>
+                </li>
+            </td>
+        </tr>
+    </ol>
+    <tr>
+        <td>
+            <div>
+            <button type="button" onclick="showTotal()">Show Total</button> <b><p id="total"></p></b>
+            </div>
+        </td>
+    </tr>
+    </table>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+    <script src="js/jquery.tools.min.js"></script>
+    <script src="rent.js"></script>
 </body>
 
 </html>

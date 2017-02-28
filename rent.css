@@ -12,7 +12,7 @@ body {
     background-color: #f0f5f5;
 }
 
-p {
+p, li {
     color: #93cdae;
     font-family: 'Shadows Into Light', cursive;
     font-size: 140%;
