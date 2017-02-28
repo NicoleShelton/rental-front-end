@@ -10,13 +10,18 @@
 </head>
 
 <body>
-    <ul class="topnav" id="myTopnav">
-        <li><a class="navbar-brand">Rent the Dress</a></li>
-        <li><a href="inventory.html">Inventory</a></li>
-        <li><a href="about.html">About</a></li>
+	<ul class="topnav" id="myTopnav">
+        <li><a>Rent the Dress</a></li>
+		<li>
+			<a href="inventory.html">Inventory ￬</a>
+			<ul class="hidden">
+                <button id="btn" type="button" onclick="showTotal()">Show Total</button> <b><p id="total"></p></b>
+			</ul>
+		</li>
+		<li><a href="about.html">About</a></li>
         <li class="icon">
         <a href="javascript:void(0);" onclick="responsive()">&#9776;</a></li>
-    </ul>
+	</ul>
 
     <h1>Inventory</h1>
 
@@ -74,9 +79,6 @@
             <button id="button" type="button" onclick="purchaseItem.scan(wedding, document.getElementById('f').value)">Add</button></center>
             <p id="price">$300</p>
         </div>
-        <div>
-            <center><button id="btn" type="button" onclick="showTotal()">Show Total</button> <b><p id="total"></p></b></center>
-         </div>
     </div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <script src="js/jquery.tools.min.js"></script>
