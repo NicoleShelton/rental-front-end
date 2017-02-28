@@ -14,7 +14,7 @@ var purchaseItem = {
 	//adding items
 	"add": function (itemCost) {
 		this.total += itemCost;
-		this.lastTransactionAmount = itemCost; /*this.numItems += quantity;*/
+		this.lastTransactionAmount = itemCost;
 	},
 	//scanning items
 	"scan": function (item, quantity) {
