@@ -20,22 +20,22 @@ var purchaseItem = {
 	"scan": function (item, quantity) {
 		switch (item) {
 			case "Casual Dress":
-				this.add(120.00 * quantity);
+				this.add(120.00 / 10 * 1.07 * quantity);
 				break;
 			case "Cocktail Dress":
-				this.add(100.00 * quantity);
+				this.add(100.00 / 10 * 1.07 * quantity);
 				break;
 			case "Evening Dress":
-				this.add(175.00 * quantity);
+				this.add(175.00 / 10 * 1.07 * quantity);
 				break;
 			case "Pageant Dress":
-				this.add(150.00 * quantity);
+				this.add(150.00 / 10 * 1.07 * quantity);
 				break;
 			case "Prom Dress":
-				this.add(200.00 * quantity);
+				this.add(200.00 / 10 * 1.07 * quantity);
 				break;
 			case "Wedding Dress":
-				this.add(300.00 * quantity);
+				this.add(300.00 / 10 * 1.07 * quantity);
 				break;
 		}
 	},
