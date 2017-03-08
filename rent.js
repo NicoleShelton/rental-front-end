@@ -21,22 +21,22 @@ var purchaseItem = {
 			var quantity = $(id).val();
 		switch (item) {
 			case "Casual":
-				this.add(120 / 10 * 1.07 * quantity);
+				this.add(1.07 * quantity * 120 / 10 + 100);
 				break;
 			case "Cocktail":
-				this.add(100 / 10 * 1.07 * quantity);
+				this.add(1.07 * quantity * 100 / 10 + 100);
 				break;
 			case "Evening":
-				this.add(175 / 10 * 1.07 * quantity);
+				this.add(1.07 * quantity * 175 / 10 + 100);
 				break;
 			case "Pageant":
-				this.add(150 / 10 * 1.07 * quantity);
+				this.add(1.07 * quantity * 150 / 10 + 100);
 				break;
 			case "Prom":
-				this.add(200 / 10 * 1.07 * quantity);
+				this.add(1.07 * quantity * 200 / 10 + 100);
 				break;
 			case "Wedding":
-				this.add(300 / 10 * 1.07 * quantity);
+				this.add(1.07 * quantity * 300 / 10 + 100);
 				break;
 		}
 	},
