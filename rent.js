@@ -19,24 +19,25 @@ var purchaseItem = {
 		"scan": function (item) {
 			var id = '#' + item;
 			var quantity = $(id).val();
+			var rentFee = 100;
 		switch (item) {
 			case "Casual":
-				this.add(1.07 * quantity * 120 / 10 + 100);
+				this.add(quantity * 120 / 10 + rentFee * 1.07);
 				break;
 			case "Cocktail":
-				this.add(1.07 * quantity * 100 / 10 + 100);
+				this.add(quantity * 100 / 10 + rentFee * 1.07);
 				break;
 			case "Evening":
-				this.add(1.07 * quantity * 175 / 10 + 100);
+				this.add(quantity * 175 / 10 + rentFee * 1.07);
 				break;
 			case "Pageant":
-				this.add(1.07 * quantity * 150 / 10 + 100);
+				this.add(quantity * 150 / 10 + rentFee * 1.07);
 				break;
 			case "Prom":
-				this.add(1.07 * quantity * 200 / 10 + 100);
+				this.add(quantity * 200 / 10 + rentFee * 1.07);
 				break;
 			case "Wedding":
-				this.add(1.07 * quantity * 300 / 10 + 100);
+				this.add(quantity * 300 / 10 + rentFee * 1.07);
 				break;
 		}
 	},
