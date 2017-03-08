@@ -22,22 +22,22 @@ var purchaseItem = {
 			var rentFee = 100;
 		switch (item) {
 			case "Casual":
-				this.add(quantity * 120 / 10 + rentFee * 1.07);
+				this.add(120 / 10 * quantity + rentFee * 1.07);
 				break;
 			case "Cocktail":
-				this.add(quantity * 100 / 10 + rentFee * 1.07);
+				this.add(100 / 10 * quantity + rentFee * 1.07);
 				break;
 			case "Evening":
-				this.add(quantity * 175 / 10 + rentFee * 1.07);
+				this.add(175 / 10 * quantity + rentFee * 1.07);
 				break;
 			case "Pageant":
-				this.add(quantity * 150 / 10 + rentFee * 1.07);
+				this.add(150 / 10 * quantity + rentFee * 1.07);
 				break;
 			case "Prom":
-				this.add(quantity * 200 / 10 + rentFee * 1.07);
+				this.add(200 / 10 * quantity + rentFee * 1.07);
 				break;
 			case "Wedding":
-				this.add(quantity * 300 / 10 + rentFee * 1.07);
+				this.add(300 / 10 * quantity + rentFee * 1.07);
 				break;
 		}
 	},
