@@ -56,8 +56,6 @@ var purchaseItem = {
 	},
 }
 
-$(".button").click(function(){ $(".item_display").append("<p>"+this.id+"</p>")  });
-
 function showTotal() {
 	document.getElementById('total').innerHTML = "Your total is: $" + purchaseItem.total.toFixed(2);
 }
