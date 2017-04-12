@@ -8,6 +8,12 @@ h1 {
     color: #9ac2f0;
 }
 
+h2 {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 200%;
+    color: #555;
+}
+
 body {
     background-color: #f0f5f5;
 }
@@ -63,7 +69,7 @@ ul.topnav li a {
     padding: 14px 16px;
     text-decoration: none;
     transition: 0.3s;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 ul.topnav li a:hover {
@@ -123,7 +129,7 @@ img {
     font-size: 20px;
     }
 
-#button {
+.button {
     border-radius: 12px;
     border-color: #9ac2f0;
     font-family: 'Shadows Into Light', cursive;

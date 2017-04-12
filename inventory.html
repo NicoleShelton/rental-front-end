@@ -8,75 +8,84 @@
     <link href="rent.css" rel="stylesheet" type="text/css">
     <link href="imgs/dress_icon.png" rel="shortcut icon" />
 </head>
+
 <body>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     <script src="jquery.tools.min.js"></script>
-	<ul class="topnav" id="myTopnav">
+    <ul class="topnav" id="myTopnav">
         <li><a href="index.html">Home</a></li>
-		<li><a href="inventory.html">Inventory</a></li>
-		<li><a href="about.html">About</a></li>
+        <li><a href="inventory.html">Inventory</a></li>
+        <li><a href="about.html">About</a></li>
         <li class="icon">
-        <a href="javascript:void(0);" onclick="responsive()">&#9776;</a></li>
-	</ul>
+            <a href="javascript:void(0);" onclick="responsive()">&#9776;</a></li>
+    </ul>
 
     <h1>Inventory</h1>
 
-    <center><button id="btn" type="button" onclick="showTotal()">Show Total</button> <b><p id="total"></p></b></center>
+    <div class="Container">
+        <div class="item_display">
+            <center>
+                <h2>Items Selected</h2>
+            </center>
+        </div>
+        <center><button id="btn" type="button" onclick="showTotal()">Show Total</button> <b><p id="total"></p></b></center>
+    </div>
+
     <p>Under each item select the quantity and click add. When finished click the button above to display the total.</p>
 
     <div class="images">
         <div class="imgContainer">
             <img src='imgs/casual.jpg'>
-            <p id="dress">Casual Dress</p>
-            <p id="description">Simple and beautiful for everyday wear.</p>
-            <center><input type="number" id="Casual" placeholder="Quan" min="0" max="10">
-            <button id="button" type="button" onclick="purchaseItem.scan('Casual')">Add</button></center>
-            <p id="price">$120</p>
+            <p>Casual Dress</p>
+            <p>Simple and beautiful for everyday wear.</p>
+            <center><input type="number" id="Casual" placeholder="20" min="0" max="20">
+                <button id="Casual Dress" class="button" type="button" onclick="purchaseItem.scan('Casual')">Add</button></center>
+            <p>$120</p>
         </div>
 
         <div class="imgContainer">
             <img src="imgs/cocktail.jpg">
-            <p id="dress">Cocktail dress</p>
-            <p id="description">Classy dress for late nights with work friends.</p>
-            <center><input type="number" id='Cocktail' placeholder="Quan" min="0" max="10">
-            <button id="button" type="button" onclick="purchaseItem.scan('Cocktail')">Add</button></center>
-            <p id="price">$100</p>
+            <p>Cocktail dress</p>
+            <p>Classy dress for late nights with work friends.</p>
+            <center><input type="number" id='Cocktail' placeholder="20" min="0" max="20">
+                <button id="Cocktail Dress" class="button" type="button" onclick="purchaseItem.scan('Cocktail')">Add</button></center>
+            <p>$100</p>
         </div>
 
         <div class="imgContainer">
             <img src="imgs/evening.jpg">
-            <p id="dress">Evening dress</p>
-            <p id="description">Elegant dress for any formal event.</p>
-            <center><input type="number" id='Evening' placeholder="Quan" min="0" max="10">
-            <button id="button" type="button" onclick="purchaseItem.scan('Evening')">Add</button></center>
-            <p id="price">$175</p>
+            <p>Evening dress</p>
+            <p>Elegant dress for any formal event.</p>
+            <center><input type="number" id='Evening' placeholder="20" min="0" max="20">
+                <button id="Evening Dress" class="button" type="button" onclick="purchaseItem.scan('Evening')">Add</button></center>
+            <p>$175</p>
         </div>
 
         <div class="imgContainer">
             <img src="imgs/pageant.jpg">
-            <p id="dress">Pageant dress</p>
-            <p id="description">Stunning sequin pageant dress.</p>
-            <center><input type="number" id='Pageant' placeholder="Quan" min="0" max="10">
-            <button id="button" type="button" onclick="purchaseItem.scan('Pageant')">Add</button></center>
-            <p id="price">$150</p>
+            <p>Pageant dress</p>
+            <p>Stunning sequin pageant dress.</p>
+            <center><input type="number" id='Pageant' placeholder="20" min="0" max="20">
+                <button id="Pageant Dress" class="button" type="button" onclick="purchaseItem.scan('Pageant')">Add</button></center>
+            <p>$150</p>
         </div>
 
         <div class="imgContainer">
             <img src="imgs/prom.jpg">
-            <p id="dress">Prom dress</p>
-            <p id="description">Gorgeous 2-piece prom dress</p>
-            <center><input type="number" id='Prom' placeholder="Quan" min="0" max="10">
-            <button id="button" type="button" onclick="purchaseItem.scan('Prom')">Add</button></center>
-            <p id="price">$200</p>
+            <p>Prom dress</p>
+            <p>Gorgeous 2-piece prom dress</p>
+            <center><input type="number" id='Prom' placeholder="20" min="0" max="20">
+                <button id="Prom Dress" class="button" type="button" onclick="purchaseItem.scan('Prom')">Add</button></center>
+            <p>$200</p>
         </div>
 
         <div class="imgContainer">
             <img src="imgs/wedding.jpg">
-            <p id="dress">Wedding dress</p>
-            <p id="description">Simple elegant wedding dress.</p>
-            <center><input type="number" id='Wedding' placeholder="Quan" min="0" max="10">
-            <button id="button" type="button" onclick="purchaseItem.scan('Wedding')">Add</button></center>
-            <p id="price">$300</p>
+            <p>Wedding dress</p>
+            <p>Simple elegant wedding dress.</p>
+            <center><input class="input" type="number" id='Wedding' placeholder="20" min="0" max="20">
+                <button class="button" id="Wedding Dress" type="button" onclick="purchaseItem.scan('Wedding')">Add</button></center>
+            <p>$300</p>
         </div>
     </div>
     <script src="rent.js"></script>

@@ -20,28 +20,43 @@ var purchaseItem = {
 			var id = '#' + item;
 			var quantity = $(id).val();
 			var rentFee = 100;
+			var max = 20
 		switch (item) {
 			case "Casual":
 				this.add(120 / 10 * quantity + rentFee * 1.07);
+				new_max = max - quantity;
+				document.getElementById('Casual').setAttribute('max', new_max);
 				break;
 			case "Cocktail":
 				this.add(100 / 10 * quantity + rentFee * 1.07);
+				new_max = max - quantity;
+				document.getElementById('Cocktail').setAttribute('max', new_max);
 				break;
 			case "Evening":
 				this.add(175 / 10 * quantity + rentFee * 1.07);
+				new_max = max - quantity;
+				document.getElementById('Evening').setAttribute('max', new_max);
 				break;
 			case "Pageant":
 				this.add(150 / 10 * quantity + rentFee * 1.07);
+				new_max = max - quantity;
+				document.getElementById('Pageant').setAttribute('max', new_max);
 				break;
 			case "Prom":
 				this.add(200 / 10 * quantity + rentFee * 1.07);
+				new_max = max - quantity;
+				document.getElementById('Prom').setAttribute('max', new_max);
 				break;
 			case "Wedding":
 				this.add(300 / 10 * quantity + rentFee * 1.07);
+				new_max = max - quantity;
+				document.getElementById('Wedding').setAttribute('max', new_max);
 				break;
 		}
 	},
 }
+
+$(".button").click(function(){ $(".item_display").append("<p>"+this.id+"</p>")  });
 
 function showTotal() {
 	document.getElementById('total').innerHTML = "Your total is: $" + purchaseItem.total.toFixed(2);
