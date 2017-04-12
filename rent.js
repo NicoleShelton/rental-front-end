@@ -1,3 +1,4 @@
+// This makes the navbar responsive
 function responsive() {
 	var response = document.getElementById("myTopnav");
 	if (response.className === "topnav") {
@@ -7,20 +8,22 @@ function responsive() {
 	}
 }
 
+// This is the shopping cart
 var purchaseItem = {
 	"total": 0,
 	"lastTransactionAmount": 0,
-	//adding items
+	// This adds the item cost to the total
 	"add": function (itemCost) {
 		this.total += itemCost;
 		this.lastTransactionAmount = itemCost;
 	},
-	//scanning items
+	// This locates the item by the id 
 		"scan": function (item) {
 			var id = '#' + item;
 			var quantity = $(id).val();
 			var rentFee = 100;
 			var max = 20
+		// Once the id is located it runs the proper switch case
 		switch (item) {
 			case "Casual":
 				this.add(120 / 10 * quantity + rentFee * 1.07);
@@ -56,13 +59,14 @@ var purchaseItem = {
 	},
 }
 
+// This shows the total to the user once the 'Show Total' button is clicked
 function showTotal() {
 	document.getElementById('total').innerHTML = "Your total is: $" + purchaseItem.total.toFixed(2);
 }
 
+// This runs the carousel by getting the images through the given class name
 var myIndex = 0;
 carousel();
-
 function carousel() {
     var i;
     var x = document.getElementsByClassName("animate-fading");
